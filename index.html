@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ثانوية عقيد لطفي - 3.T.M | موقع البكالوريا</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- ===== رأس الموقع ===== -->
+  <header class="header">
+    <div class="logo">
+      <h1>ثانوية عقيد لطفي</h1>
+      <p>قسم 3.T.M - تقني رياضي</p>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#subjects">المواد</a></li>
+        <li><a href="#exams">الامتحانات السابقة</a></li>
+        <li><a href="#about">حول الموقع</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== الصفحة الرئيسية ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>مرحبًا بكم في موقع 3.T.M</h2>
+      <p>كل ما تحتاجه للتحضير للبكالوريا في مكان واحد — من 2008 إلى 2025</p>
+      <a href="#subjects" class="btn">ابدأ الدراسة الآن</a>
+    </div>
+  </section>
+
+  <!-- ===== قسم المواد ===== -->
+  <section id="subjects" class="subjects-section">
+    <h2>📚 المواد الدراسية</h2>
+    <div class="subjects-grid">
+      <div class="subject-card" onclick="openSubject('رياضيات')">رياضيات</div>
+      <div class="subject-card" onclick="openSubject('فيزياء')">فيزياء</div>
+      <div class="subject-card" onclick="openSubject('تكنولوجيا')">تكنولوجيا</div>
+      <div class="subject-card" onclick="openSubject('لغة عربية')">لغة عربية</div>
+      <div class="subject-card" onclick="openSubject('لغة فرنسية')">لغة فرنسية</div>
+      <div class="subject-card" onclick="openSubject('لغة إنجليزية')">لغة إنجليزية</div>
+      <div class="subject-card" onclick="openSubject('تربية إسلامية')">تربية إسلامية</div>
+      <div class="subject-card" onclick="openSubject('تاريخ و جغرافيا')">تاريخ و جغرافيا</div>
+    </div>
+  </section>
+
+  <!-- ===== قسم الامتحانات ===== -->
+  <section id="exams" class="exams-section">
+    <h2>🧾 الامتحانات السابقة</h2>
+    <p>اختر السنة لعرض المواضيع و الحلول النموذجية:</p>
+    <div class="year-selector">
+      <select id="yearSelect" onchange="showExams()">
+        <option value="">اختر السنة</option>
+      </select>
+    </div>
+    <div id="examList" class="exam-list"></div>
+  </section>
+
+  <!-- ===== حول ===== -->
+  <section id="about" class="about-section">
+    <h2>ℹ️ حول الموقع</h2>
+    <p>
+      هذا الموقع مخصص لطلاب <strong>3.T.M</strong> بثانوية <strong>عقيد لطفي</strong>،
+      يحتوي على جميع الدروس، المواضيع، والامتحانات من سنة 2008 إلى 2025.
+      تم تصميمه ليكون مرجعًا شاملًا واحترافيًا يساعدك على النجاح والتفوق.
+    </p>
+  </section>
+
+  <!-- ===== تذييل ===== -->
+  <footer class="footer">
+    <p>© 2026 - ثانوية عقيد لطفي | 3.T.M | تصميم احترافي عالمي</p>
+  </footer>
+
+</body>
+</html>
